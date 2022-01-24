@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Places</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Places</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="backgroundVideo.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Must Visit</h2>
+        <h3>Places in the world!</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex possimus,
+          alias ipsum rerum dolorem laboriosam doloremque eligendi veniam ullam
+          in!
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <img src="facebook.png" alt="facebook icon" width="50px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/unique_akanshu/">
+            <img src="instagram.png" alt="instagram icon" width="50px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/akanshu-singh-68b18b191/">
+            <img src="linkedin.png" alt="linkedin icon" width="50px" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/explore.html">Explore</a></li>
+        <li><a href="/bookings.html">Bookings</a></li>
+        <li><a href="/places.html">Places</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
